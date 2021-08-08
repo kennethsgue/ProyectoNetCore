@@ -193,3 +193,7 @@ C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\obj\Debug\netc
 C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\RegistroUsuario\Create.cshtml.g.cs
 C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\RegistroUsuario\Edit.cshtml.g.cs
 C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\RegistroUsuario\Delete.cshtml.g.cs
+C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
