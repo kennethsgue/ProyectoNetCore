@@ -21,7 +21,7 @@ namespace FrontEnd.Controllers
             {
                 empleos = Unidad.genericDAL.GetAll().ToList();
             }
-            return View(empleos );
+            return View(empleos);
         }
 
         // GET: RegistroUsuarioController/Details/5
