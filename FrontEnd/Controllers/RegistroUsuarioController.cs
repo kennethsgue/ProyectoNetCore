@@ -39,37 +39,47 @@ namespace FrontEnd.Controllers
         // POST: RegistroUsuarioController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Empleo empleo)
         {
-            try
+          
+            using (UnidadDeTrabajo<Empleo> unidad = new UnidadDeTrabajo<Empleo>(new EmpleosContext()))
             {
-                return RedirectToAction(nameof(Index));
+                unidad.genericDAL.Add(empleo);
+                unidad.Complete();
             }
-            catch
-            {
-                return View();
-            }
+
+
+            return RedirectToAction("Index");
         }
 
         // GET: RegistroUsuarioController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Empleo empleo;
+            using (UnidadDeTrabajo<Empleo> Unidad
+               = new UnidadDeTrabajo<Empleo>(new EmpleosContext()))
+            {
+                empleo = Unidad.genericDAL.Get(id);
+
+            }
+
+            return View(empleo);
         }
 
         // POST: RegistroUsuarioController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Empleo empleo)
         {
-            try
+            using (UnidadDeTrabajo<Empleo> unidad = new UnidadDeTrabajo<Empleo>(new EmpleosContext()))
             {
-                return RedirectToAction(nameof(Index));
+                unidad.genericDAL.Update(empleo);
+                unidad.Complete();
+
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction("Index");
+
         }
 
         // GET: RegistroUsuarioController/Delete/5
@@ -81,16 +91,14 @@ namespace FrontEnd.Controllers
         // POST: RegistroUsuarioController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(Empleo empleo)
         {
-            try
+            using (UnidadDeTrabajo<Empleo> unidad = new UnidadDeTrabajo<Empleo>(new EmpleosContext()))
             {
-                return RedirectToAction(nameof(Index));
+                unidad.genericDAL.Remove(empleo);
+                unidad.Complete();
             }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("Index");
         }
     }
 }
