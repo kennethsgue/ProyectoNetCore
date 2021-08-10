@@ -10,13 +10,11 @@ namespace BackEnd.Entities
         public Role()
         {
             Empresas = new HashSet<Empresa>();
-            Usuarios = new HashSet<Usuario>();
         }
 
         public int Codigo { get; set; }
         public string Descripcion { get; set; }
 
         public virtual ICollection<Empresa> Empresas { get; set; }
-        public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

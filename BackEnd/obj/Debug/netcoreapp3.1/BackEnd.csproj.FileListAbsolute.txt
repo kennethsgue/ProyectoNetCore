@@ -22,3 +22,14 @@ C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\BackEnd\obj\Debug\netco
 C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.dll
 C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.pdb
 C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.genruntimeconfig.cache
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\bin\Debug\netcoreapp3.1\BackEnd.deps.json
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\bin\Debug\netcoreapp3.1\BackEnd.runtimeconfig.json
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\bin\Debug\netcoreapp3.1\BackEnd.runtimeconfig.dev.json
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\bin\Debug\netcoreapp3.1\BackEnd.dll
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\bin\Debug\netcoreapp3.1\BackEnd.pdb
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.AssemblyInfoInputs.cache
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.AssemblyInfo.cs
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.dll
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.pdb
+C:\Users\eduar\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.genruntimeconfig.cache
