@@ -1,5 +1,3 @@
-using System;
-
 namespace FrontEndAPI.Models
 {
     public class ErrorViewModel

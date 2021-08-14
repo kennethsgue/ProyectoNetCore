@@ -1,15 +1,10 @@
-﻿using FrontEndAPI.Models;
-using FrontEndAPI.REST;
-using Microsoft.AspNetCore.Http;
+﻿using FrontEndAPI.REST;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace FrontEndAPI.Controllers
 {
@@ -17,7 +12,7 @@ namespace FrontEndAPI.Controllers
     {
         private readonly IConfiguration _config;
         private string _URL;
-        ServiceRepository serviceObj;
+        private ServiceRepository serviceObj;
 
         public EmpleoController(IConfiguration config)
         {
@@ -25,12 +20,12 @@ namespace FrontEndAPI.Controllers
             _URL = _config.GetValue<string>("Services:EmpleoURL");
             serviceObj = new ServiceRepository(_URL);
         }
+
         // GET: CategoryController
         public IActionResult Index()
         {
             try
             {
-
                 HttpResponseMessage response = serviceObj.GetResponse("api/empleo");
                 response.EnsureSuccessStatusCode();
                 var content = response.Content.ReadAsStringAsync().Result;
@@ -48,10 +43,10 @@ namespace FrontEndAPI.Controllers
                 throw;
             }
         }
+
         // GET: CategoryController/Details/5
         public ActionResult Details(int id)
         {
-
             HttpResponseMessage response = serviceObj.GetResponse("api/empleo/" + id.ToString());
             var content = response.Content.ReadAsStringAsync().Result;
             Models.EmpleoViewModel categoryViewModel =
@@ -81,6 +76,7 @@ namespace FrontEndAPI.Controllers
                 return View();
             }
         }
+
         // GET: CategoryController/Edit/5
         public ActionResult Edit(int id)
         {
@@ -90,8 +86,6 @@ namespace FrontEndAPI.Controllers
                 JsonConvert.DeserializeObject<Models.EmpleoViewModel>(content);
             return View(EmpleoViewModel);
         }
-
-
 
         // POST: CategoryController/Edit/5
         [HttpPost]
@@ -127,7 +121,6 @@ namespace FrontEndAPI.Controllers
         {
             try
             {
-
                 HttpResponseMessage response = serviceObj.DeleteResponse("api/region/" + empleo.EmpleoID.ToString());
                 response.EnsureSuccessStatusCode();
                 return RedirectToAction("Index");

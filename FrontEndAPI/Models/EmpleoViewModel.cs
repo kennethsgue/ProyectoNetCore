@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace FrontEndAPI.Models
 {
@@ -10,6 +6,7 @@ namespace FrontEndAPI.Models
     {
         [Key]
         public int EmpleoID { get; set; }
+
         public string NombreEmpleo { get; set; }
         public string Descripcion { get; set; }
         public decimal? Salario { get; set; }
