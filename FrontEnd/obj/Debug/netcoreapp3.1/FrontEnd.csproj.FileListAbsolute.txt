@@ -329,6 +329,7 @@ C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\bin\Debug\netcoreapp3.1\runtime
 C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\bin\Debug\netcoreapp3.1\BackEnd.dll
 C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\bin\Debug\netcoreapp3.1\BackEnd.pdb
 C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.csproj.AssemblyReference.cache
+C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.AssemblyInfoInputs.cache
 C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.AssemblyInfo.cs
 C:\Users\eduar\Desktop\ProyectoNetCore2\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.csproj.CoreCompileInputs.cache
