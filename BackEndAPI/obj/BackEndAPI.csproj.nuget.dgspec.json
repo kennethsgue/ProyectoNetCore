@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj": {}
+    "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj": {
+    "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj",
+        "projectUniqueName": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj",
         "projectName": "BackEndAPI",
-        "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj",
+        "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEndAPI\\BackEndAPI.csproj",
         "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEndAPI\\obj\\",
+        "outputPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEndAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
-                "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
+              "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
+                "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
+        "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
         "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

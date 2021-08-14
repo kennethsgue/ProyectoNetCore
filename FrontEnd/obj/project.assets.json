@@ -8744,11 +8744,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
+      "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\obj\\",
+      "outputPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8769,8 +8769,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
-              "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
+            "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
+              "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\GitHub\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
             }
           }
         }
