@@ -80,6 +80,7 @@ namespace FrontEndAPI.Controllers
         // GET: CategoryController/Edit/5
         public ActionResult Edit(int id)
         {
+
             HttpResponseMessage response = serviceObj.GetResponse("api/empleo/" + id.ToString());
             var content = response.Content.ReadAsStringAsync().Result;
             Models.EmpleoViewModel EmpleoViewModel =
