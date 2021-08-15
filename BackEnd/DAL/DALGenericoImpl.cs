@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace BackEnd.DAL
 {
@@ -16,17 +15,16 @@ namespace BackEnd.DAL
         {
             Context = context;
         }
+
         public bool Add(TEntity entity)
         {
             try
             {
-
                 Context.Set<TEntity>().Add(entity);
                 return true;
             }
             catch (Exception)
             {
-
                 return false;
             }
         }
@@ -39,7 +37,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -52,7 +49,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 return null;
             }
         }
@@ -65,7 +61,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 return null;
             }
         }
@@ -78,7 +73,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 return null;
             }
         }
@@ -93,7 +87,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 return false;
             }
         }
@@ -106,7 +99,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -119,7 +111,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 return null;
             }
         }
@@ -133,7 +124,6 @@ namespace BackEnd.DAL
             }
             catch (Exception)
             {
-
                 return false;
             }
         }

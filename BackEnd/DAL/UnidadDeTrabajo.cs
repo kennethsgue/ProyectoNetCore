@@ -1,7 +1,5 @@
 ﻿using BackEnd.Entities;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BackEnd.DAL
 {
@@ -10,12 +8,10 @@ namespace BackEnd.DAL
         private readonly EmpleosContext context;
         public IDALGenerico<T> genericDAL;
 
-
         public UnidadDeTrabajo(EmpleosContext _context)
         {
             context = _context;
             genericDAL = new DALGenericoImpl<T>(context);
-
         }
 
         public bool Complete()
@@ -30,14 +26,11 @@ namespace BackEnd.DAL
                 string msj = e.Message;
                 return false;
             }
-
         }
-
 
         public void Dispose()
         {
             context.Dispose();
         }
-
     }
 }

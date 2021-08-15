@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-#nullable disable
+﻿#nullable disable
 
 namespace BackEnd.Entities
 {
@@ -9,5 +6,8 @@ namespace BackEnd.Entities
     {
         public int UsuarioId { get; set; }
         public int EmpleoId { get; set; }
+
+        public virtual Empleo Empleo { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

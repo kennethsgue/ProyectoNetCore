@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
@@ -10,6 +8,8 @@ namespace BackEnd.Entities
     {
         public EmpleosContext()
         {
+            var optionsBuilder = new DbContextOptionsBuilder<EmpleosContext>();
+            optionsBuilder.UseSqlServer(Utilities.Util.ConnectionString);
         }
 
         public EmpleosContext(DbContextOptions<EmpleosContext> options)
@@ -27,11 +27,14 @@ namespace BackEnd.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=.;Database=Empleos;Integrated Security=True;Trusted_Connection=True;");
-            }
+            optionsBuilder.UseSqlServer(Utilities.Util.ConnectionString);
+            optionsBuilder.EnableSensitiveDataLogging(true);
+            base.OnConfiguring(optionsBuilder);
+            //            if (!optionsBuilder.IsConfigured)
+            //            {
+            //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+            //                optionsBuilder.UseSqlServer("Server=.;Database=Empleos;Integrated Security=True;Trusted_Connection=True;");
+            //            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -45,6 +48,18 @@ namespace BackEnd.Entities
                 entity.Property(e => e.EmpleoId).HasColumnName("EmpleoID");
 
                 entity.Property(e => e.UsuarioId).HasColumnName("UsuarioID");
+
+                entity.HasOne(d => d.Empleo)
+                    .WithMany()
+                    .HasForeignKey(d => d.EmpleoId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Aplicaciones_Empleo");
+
+                entity.HasOne(d => d.Usuario)
+                    .WithMany()
+                    .HasForeignKey(d => d.UsuarioId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Aplicaciones_Usuario");
             });
 
             modelBuilder.Entity<Bitacora>(entity =>
@@ -54,19 +69,24 @@ namespace BackEnd.Entities
 
                 entity.ToTable("Bitacora");
 
-                entity.Property(e => e.UsuarioId).HasColumnName("UsuarioID");
+                entity.Property(e => e.UsuarioId)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("UsuarioID");
 
                 entity.Property(e => e.Error).IsUnicode(false);
 
                 entity.Property(e => e.Fecha).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Usuario)
+                    .WithOne(p => p.Bitacora)
+                    .HasForeignKey<Bitacora>(d => d.UsuarioId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Bitacora_Usuario");
             });
 
             modelBuilder.Entity<Empleo>(entity =>
             {
-                entity.HasKey(e => e.IdEmpleo)
-                    .HasName("XPKEmpleos");
-
-                entity.Property(e => e.IdEmpleo).HasColumnName("idEmpleo");
+                entity.Property(e => e.EmpleoId).HasColumnName("EmpleoID");
 
                 entity.Property(e => e.Descripcion)
                     .IsRequired()
@@ -74,7 +94,12 @@ namespace BackEnd.Entities
                     .IsUnicode(false)
                     .HasColumnName("descripcion");
 
-                entity.Property(e => e.IdEmpresa).HasColumnName("idEmpresa");
+                entity.Property(e => e.EmpresaId).HasColumnName("EmpresaID");
+
+                entity.Property(e => e.Especializacion)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("especializacion");
 
                 entity.Property(e => e.NombreEmpleo)
                     .IsRequired()
@@ -92,22 +117,24 @@ namespace BackEnd.Entities
                     .IsUnicode(false)
                     .HasColumnName("ubicacion");
 
-                entity.HasOne(d => d.IdEmpresaNavigation)
+                entity.HasOne(d => d.Empresa)
                     .WithMany(p => p.Empleos)
-                    .HasForeignKey(d => d.IdEmpresa)
+                    .HasForeignKey(d => d.EmpresaId)
                     .HasConstraintName("R_6");
+
+                entity.HasOne(d => d.EspecializacionNavigation)
+                    .WithMany(p => p.Empleos)
+                    .HasForeignKey(d => d.Especializacion)
+                    .HasConstraintName("FK_Empleos_Spec");
             });
 
             modelBuilder.Entity<Empresa>(entity =>
             {
-                entity.HasKey(e => e.IdEmpresa)
-                    .HasName("XPKEmpresa");
-
                 entity.ToTable("Empresa");
 
-                entity.Property(e => e.IdEmpresa)
+                entity.Property(e => e.EmpresaId)
                     .ValueGeneratedNever()
-                    .HasColumnName("idEmpresa");
+                    .HasColumnName("EmpresaID");
 
                 entity.Property(e => e.CedulaJuridica)
                     .IsRequired()
@@ -192,21 +219,21 @@ namespace BackEnd.Entities
 
             modelBuilder.Entity<Usuario>(entity =>
             {
-                entity.HasKey(e => e.Cedula)
-                    .HasName("XPKUsuario");
-
                 entity.ToTable("Usuario");
 
-                entity.Property(e => e.Cedula)
-                    .HasMaxLength(20)
-                    .IsUnicode(false)
-                    .HasColumnName("cedula");
+                entity.Property(e => e.UsuarioId).HasColumnName("UsuarioID");
 
                 entity.Property(e => e.Apellidos)
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("apellidos");
+
+                entity.Property(e => e.Cedula)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("cedula");
 
                 entity.Property(e => e.Clave)
                     .IsRequired()
@@ -221,6 +248,8 @@ namespace BackEnd.Entities
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("correo");
+
+                entity.Property(e => e.Cv).HasColumnName("CV");
 
                 entity.Property(e => e.Direccion)
                     .IsRequired()
@@ -239,11 +268,6 @@ namespace BackEnd.Entities
                     .HasMaxLength(20)
                     .IsUnicode(false)
                     .HasColumnName("telefono");
-
-                entity.HasOne(d => d.CodigoNavigation)
-                    .WithMany(p => p.Usuarios)
-                    .HasForeignKey(d => d.Codigo)
-                    .HasConstraintName("R_8");
             });
 
             OnModelCreatingPartial(modelBuilder);

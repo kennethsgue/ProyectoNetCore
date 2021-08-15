@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\casti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\BackEnd\\obj\\",
+        "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
+        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\casti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,21 +82,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\casti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEnd\\obj\\",
+        "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\casti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +114,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
-                "projectPath": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
+              "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
+                "projectPath": "C:\\Users\\eduar\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
               }
             }
           }
@@ -145,7 +153,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

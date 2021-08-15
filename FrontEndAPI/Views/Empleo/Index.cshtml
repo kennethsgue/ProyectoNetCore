@@ -1,0 +1,96 @@
+﻿@model IEnumerable<FrontEndAPI.Models.EmpleoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="card-header"><h3 class="text-center font-weight-light my-4">Empleos</h3></div>
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card mb-4">
+                    @*<div class="card-header">
+                            <i class="fas fa-chart-bar mr-1"></i>
+                            Empleos promedio
+                        </div>*@
+                    @*<div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>*@
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Mediciones Registradas
+            </div>
+            <div class="card-body">
+                <p>
+                    <a class="small text-black" asp-action="Create">Create New</a>
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmpleoID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.NombreEmpleo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Descripcion)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Salario)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Ubicacion)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmpresaId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Especializacion)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.EmpleoID)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NombreEmpleo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descripcion)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Salario)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Ubicacion)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.EmpresaId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Especializacion)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.EmpleoID }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.EmpleoID }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.EmpleoID })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

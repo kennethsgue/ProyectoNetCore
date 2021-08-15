@@ -1,0 +1,85 @@
+﻿@model IEnumerable<FrontEndAPI.Models.EmpresaViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="card-header"><h3 class="text-center font-weight-light my-4">Empresas</h3></div>
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card mb-4">
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table mr-1"></i>
+                Mediciones Registradas
+            </div>
+            <div class="card-body">
+                <p>
+                    <a class="small text-black" asp-action="Create">Create New</a>
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmpresaID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Descripcion)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.NombreEmpresa)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Direccion)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Correo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CedulaJuridica)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.EmpresaID)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descripcion)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NombreEmpresa)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Direccion)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Correo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CedulaJuridica)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.EmpresaID }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.EmpresaID }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.EmpresaID })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
