@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\kenne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\BackEnd\\obj\\",
+        "projectPath": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj",
+        "packagesPath": "C:\\Users\\mrarn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kenne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mrarn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\kenne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\FrontEnd\\obj\\",
+        "projectPath": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\mrarn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kenne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mrarn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +106,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
-                "projectPath": "C:\\Users\\kenne\\source\\repos\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
+              "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj": {
+                "projectPath": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\BackEnd\\BackEnd.csproj"
               }
             }
           }
@@ -145,7 +145,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
