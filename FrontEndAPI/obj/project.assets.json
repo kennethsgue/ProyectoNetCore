@@ -4041,19 +4041,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mrarn\\.nuget\\packages\\": {}
+    "C:\\Users\\casti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEndAPI\\FrontEndAPI.csproj",
+      "projectUniqueName": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEndAPI\\FrontEndAPI.csproj",
       "projectName": "FrontEndAPI",
-      "projectPath": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEndAPI\\FrontEndAPI.csproj",
-      "packagesPath": "C:\\Users\\mrarn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrarn\\Desktop\\ProyectoNetCore2\\FrontEndAPI\\obj\\",
+      "projectPath": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEndAPI\\FrontEndAPI.csproj",
+      "packagesPath": "C:\\Users\\casti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\casti\\Source\\Repos\\kennethsgue\\ProyectoNetCore2\\FrontEndAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mrarn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\casti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4118,7 +4118,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -59,3 +59,4 @@ C:\Users\mrarn\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.
 C:\Users\mrarn\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.dll
 C:\Users\mrarn\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.pdb
 C:\Users\mrarn\Desktop\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.genruntimeconfig.cache
+C:\Users\casti\Source\Repos\kennethsgue\ProyectoNetCore2\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
